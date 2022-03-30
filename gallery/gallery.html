@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  </head>
+  <body>
+   
+<div class="container-container">
+    <div class="container">
+     
+      <div class="heading"> Gallery </div>
+      <div class="header">
+        <a href="#" class="brand">CTNY TV</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+          <div class="navigation-items">
+             <a href="http://localhost:5500/home.html">Home</a>
+          <a href="http://localhost:5500/gallery/gallery.html">Gallery</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+      </div>
+     
+  
+
+        <div class="video-container">
+
+        <div class="video">
+        <video src="../SHANGHAI_COOKIE_1_1.mov"></video>
+        </div>
+
+        <div class="video">
+        <video src="../SHANGHAI_ICECREAM_1.mov"></video>
+        </div>
+
+        <div class="video">
+        <video src="../SHANGHAI_DIMSUM_1.mov"></video>
+        </div>
+
+        <div class="video">
+        <video src="../video test.mov"></video>
+        </div>
+
+        <div class="video">
+        <video src="../SHANGHAI_COOKIE_1_1.mov"></video>
+        </div>
+
+        <div class="video">
+        <video src="../SHANGHAI_DUCK_1.MOV"></video>
+        </div>
+
+        <div class="video">
+        <video src="../video2.mp4"></video>
+        </div>
+
+        <div class="video">
+        <video src="../video1.mp4"></video>
+         </div>
+
+        <div class="video">
+        <video src="../video test.mov"></video>
+        </div>
+
+        </div>
+        </div>
+
+
+        <script>
+          let video = document.querySelectorAll('video')
+          video.forEach(play => play.addEventListener('click', ()=>{
+            play.classList.toggle('active');
+            if(play.paused){
+              play.play();
+            }else{
+              play.pause();
+              play.currentTime = 0;
+            }
+          }))
+        </script>
+</div>
+  </body>
+</html>
